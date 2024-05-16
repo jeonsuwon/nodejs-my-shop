@@ -1,22 +1,22 @@
 // schemas/todo.schema.js
 
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 
 const shopSchema = new mongoose.Schema({
   goodsNumber: {
     type: Number,
-    required: true, 
+    required: true,
   },
   goodsName: {
     type: String,
-    required: true, 
+    required: true,
   },
   goodsInfor: {
     type: String,
-    required: false, 
+    required: false,
   },
   manager: {
-    type: String, 
+    type: String,
     required: false,
   },
   PW: {
@@ -25,7 +25,7 @@ const shopSchema = new mongoose.Schema({
   },
   status: {
     type: String,
-    required: false, 
+    required: false,
   },
   creatDate: {
     type: Date,
@@ -33,9 +33,8 @@ const shopSchema = new mongoose.Schema({
   },
   chageDate: {
     type: Date,
-    required: false, 
+    required: false,
   },
-
 });
 
-export default mongoose.model('Shop', shopSchema);
+export default mongoose.model("Shop", shopSchema);
